@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>__42</title>
+
+    <link rel="stylesheet" href="/package/css/minireset.css" />
+    <link rel="stylesheet" href="/package/css/main.css" />
+</head>
+<body>
+
+<h1>__42 About</h1>
+
+
+
+<header>
+    <nav>
+        <ul>
+            <li>
+                <a href="/">home</a>
+                <a href="/pages" data-pjax-prefetch="hover">pages list</a>
+                <a class="active" href="/pages/about" data-pjax-prefetch="hover">about</a>
+                <a href="/pages/contact" data-pjax-prefetch="hover">contact</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+
+<main id="content">
+    about
+</main>
+
+<link rel="html" href="/pages/partials/footer.html" />
+
+
+
+
+<script defer type="module" src="/package/_index.js"></script>
+<!-- <script type="module" >
+import PromiseDom from "./package/promiseDom.js"
+
+let dom = new PromiseDom
+dom.ready.then(__start())
+
+function __start() {
+    console.info('__42 / dom is ready, starting now')
+}
+</script> -->
+<script>
+console.log("I will run on every navigation");
+</script>
+  
+  <!-- script will also run once if detected on pjax navigation -->
+<script data-pjax-eval="false">
+console.log("I will run on initialization only!");
+</script>
+</body>
+</html>

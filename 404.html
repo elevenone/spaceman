@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>__42</title>
+
+    <link rel="stylesheet" href="/package/css/minireset.css" />
+    <link rel="stylesheet" href="/package/css/main.css" />
+</head>
+<body>
+
+<h1>__42 404</h1>
+
+
+
+<header>
+    <nav>
+        <ul>
+            <li>
+                <a href="/">home</a>
+                <a href="/pages" data-pjax-prefetch="hover">pages list</a>
+                <a href="/pages/about" data-pjax-prefetch="hover">about</a>
+                <a href="/pages/contact" data-pjax-prefetch="hover">contact</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+<main id="content">
+404
+a
+<!-- Draw everything relative to a 200x200 canvas, this will then scale to any resolution -->
+<svg version="1.1" viewBox="0 0 200 200">
+  <defs>
+    <!-- Our gradient fill #gradient -->
+    <linearGradient id="gradient" gradientTransform="rotate(90)">
+      <!-- Use CSS custom properties for the start / stop colors of the gradient -->
+      <stop id="gradientStop1" offset="0%" stop-color="var(--startColor)" />
+      <stop id="gradientStop2 " offset="100%" stop-color="var(--stopColor)" />
+    </linearGradient>
+    <circle cx="50" cy="50" r="25" />
+
+  </defs>
+</svg>
+a
+
+<div id="row1">
+    <style>
+        #row1 {
+            font-size: 2em;
+            color: lightgreen;
+            line-height: 1.5em;
+            font-family: monospace;
+          }
+    </style>
+    
+</div>
+
+</main>
+
+<link rel="html" href="/pages/partials/footer.html" />
+
+
+
+
+<script defer type="module" type="text/javascript" src="/_42/index.js"></script>
+<script defer type="module" type="text/javascript" src="/pjax.js"></script>
+
+<script>
+console.log("I will run on every navigation");
+</script>
+  
+  <!-- script will also run once if detected on pjax navigation -->
+<script data-pjax-eval="false">
+console.log("I will run on initialization only!");
+</script>
+
+<script>
+    /**
+ * Small animation function to create basic animations with setInterval
+ */
+
+// If the browser is ready start the function
+ window.onload = function () {
+    //Select the container in which the animation will be played
+    let node_copy = document.getElementById('row1');
+ 
+    //Your animation frames, frame by frame.
+    //Feel free to add or delete frames, to see what happens ;)    
+    asciiFrames = 
+            [
+             `˚........
+              .........
+              .........
+              .........
+             `,
+             `˚˚.......
+              ...4.....
+              .........
+              .........
+             `,
+             `˚˚˚......
+              .......4.
+              .........
+              ...4.....
+             `,
+             `˚˚˚˚.....
+              .........
+              ...4...4.
+              .........
+             `,
+             `˚˚˚˚˚..4.
+              ..4......
+              .......4.
+              ....4....
+             `,
+             `˚˚˚˚˚˚...
+              .4....4..
+              ....4....
+              ..4......
+             `,
+             `...4...4.
+              .4....4..
+              ......4..
+              ..4.......
+             `,
+             `.........
+              .........
+              .........
+              .....4...
+             `,
+             `.........
+              ....4....
+              .........
+              .........
+             `,
+             `....4....
+              .........
+              .........
+              .........
+             `,
+             `.4.......
+              .........
+              .........
+              .........
+             `,
+             `.........
+              .......4.
+              .........
+              .........
+             `,
+
+
+
+             
+            ];
+    
+    
+    
+    var animateASCII = {
+       init: function(frames, target){
+       //Set the start frame to 0
+       let i = 0;     
+        //Puts the start frame inside the node_copy container   
+        node_copy.innerText = frames[0];
+        //Starts the interval to render the animation     
+        setInterval(() => {
+          //Puts the new frame in the node_copy container  
+          node_copy.innerText = frames[i];
+          /*Goes to the next array element (frame), and set it to 
+            zero if we reached the last frame to restart the animation*/
+          if (i < frames.length-1) {
+            i++;
+          } else {
+            i = 0;
+          }
+        //Here you can adjust the animation speed
+        }, 150);
+     }
+    };
+    
+    //Starts the ASCII function
+    animateASCII.init(asciiFrames,node_copy); 
+  }
+</script>
+</body>
+</html>

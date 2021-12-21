@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /package/
+Disallow: /tmp/
+Disallow: /*.pdf$
+Allow: /pages/
+
+Sitemap: ___DOMAIN___/sitemap.xml

@@ -1,0 +1,30 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+      "pretty": true,
+      "sourceMap": false,
+      "declaration": true,
+      "importHelpers": false,
+      "target": "ESNext",
+      "module": "ESNext",
+      "moduleResolution": "node",
+      "outDir": "package",
+      "noEmitOnError": true,
+      "noUnusedLocals": true,
+      "lib": [
+        "ESNext",
+        "dom"
+      ]
+    },
+    "files": [
+      "src/_42/promiseDom.ts",
+      "src/_42/fetchPartial.ts",
+      "src/_index.ts",
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "*": [
+        "src/*"
+      ]
+    }
+  }

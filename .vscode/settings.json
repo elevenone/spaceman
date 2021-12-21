@@ -1,0 +1,12 @@
+{
+    "[typescript]": {
+      "editor.parameterHints.enabled": true,
+      "editor.suggest.showModules": true
+    },
+    "files.exclude": {
+      "**/.git": true,
+      "**/.gitignore": false,
+      // "**/node_modules": true
+    },
+    "workspace.isHidden": false
+  }
