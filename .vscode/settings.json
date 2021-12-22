@@ -5,8 +5,9 @@
     },
     "files.exclude": {
       "**/.git": true,
-      "**/.gitignore": false,
+      "**/.gitignore": true,
       // "**/node_modules": true
     },
-    "workspace.isHidden": false
+    "workspace.isHidden": false,
+    "editor.stickyTabStops": true
   }

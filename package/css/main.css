@@ -33,3 +33,34 @@ svg {
     background-color: black;
 }
 
+
+
+
+
+
+
+.show {
+    animation: _show .1s;
+}
+
+.hide {
+    animation: _hide .1s;
+}
+
+@keyframes _show { 
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes _hide { 
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

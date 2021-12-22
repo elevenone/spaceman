@@ -39,7 +39,7 @@
  // pjax
  import * as Pjax from "../package/vendor/brixtol/pjax.esm.js";
  
- export default () => {
+//  export default () => {
  
      Pjax.connect({
          // Define fragments to be replaced here!
@@ -76,13 +76,48 @@
          },
      })
  
- }
+//  }
  
  
+ // // called when a prefetch is triggered
+// document.addEventListener("pjax:prefetch");
+
+// // called when a mousedown event occurs on a link
+// document.addEventListener("pjax:trigger");
+
+// // called before a page is fetched over XHR
+// document.addEventListener("pjax:request");
+
+// // called before a page is cached
+// document.addEventListener("pjax:cache");
+
+// // called before a page is rendered
+// document.addEventListener("pjax:render")
+
+// // called after a page has rendered
+// document.addEventListener("pjax:load");
+
+// // called when a module is loaded
+// document.addEventListener("pjax:module");
  
- 
- 
- 
+// hides and shows the content
+let el = document.getElementById("content")
+
+document.addEventListener("pjax:request", function(){
+    console.log('document.addEventListener pjax:request')
+})
+
+document.addEventListener("pjax:trigger", function(){
+    console.log('document.addEventListener pjax:trigger')
+    el.classList.remove('show')
+    el.classList.add('hide')
+})
+
+document.addEventListener("pjax:render", function(){
+    console.log('document.addEventListener pjax:render')
+    el.classList.remove('hide')
+    el.classList.add('show')
+})
  
  
  
