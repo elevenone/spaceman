@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Document</title>
+
+    <link rel="html" href="/pages/partials/header.html" />
+
+    
+    <style>
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*, *:before, *:after {
+    sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    display: grid;
+}
+
+main { 
+    /* display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr; 
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; */
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: "."; 
+
+    /* border */
+    padding: 30px;
+}
+
+section { 
+    /* grid-area: 1 / 1 / 2 / 2; */
+    background-color: rgb(222, 222, 222);
+    border-radius: 12px;
+    padding: 30px;
+
+    /* center child */
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+} 
+
+.circle {
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-radius: 50%;
+    background-image: url('/me.jpg');
+    background-position: 50%;
+}
+
+
+.circle  {
+    background: linear-gradient(223deg, rgba(255, 255, 255, 0.95), rgba(222, 222, 222, 0.95) );
+    background-size: 300% 300%;
+    animation: gradient 10s ease infinite;
+}
+
+
+
+@keyframes gradient { 
+    0%{
+        background-position:0% 88%;
+    }
+    50%{
+        background-position:100% 13%;
+    }
+    100%{
+        background-position:0% 88%;
+    }
+}
+
+@keyframes gradientBlur { 
+    0%{
+        background-position:0% 88%;
+        filter: blur(0);
+    }
+    20%{
+        filter: blur(6px);
+    }
+    50%{
+        background-position:100% 13%;
+        filter: blur(12px);
+    }
+    80%{
+        background-position:100% 12%;
+        filter: blur(9px);
+    }
+    100%{
+        background-position:0% 88%;
+        filter: blur(0);
+    }
+}
+
+@keyframes AnimationName { 
+    0%{
+        background-position:0% 88%;
+        box-shadow: inset 0px 3px 6px rgba(50, 50, 50, 0.2);
+    }
+    50%{
+        background-position:100% 13%;
+        box-shadow: inset 0px 6px 9px rgba(50, 50, 50, 0.2);
+    }
+    100%{
+        background-position:0% 88%;
+        box-shadow: inset 0px 3px 6px rgba(50, 50, 50, 0.2);
+    }
+}
+
+.circleS {
+  -moz-box-shadow:    3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow:        inset 0px 3px 0px 0px rgba(93, 91, 91, 0.2);
+}
+
+
+    </style>
+</head>
+<body>
+
+<main>
+
+
+<section>
+    
+    <div class="circle">
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+</main>
+
+
+
+
+
+
+</body>
+</html>

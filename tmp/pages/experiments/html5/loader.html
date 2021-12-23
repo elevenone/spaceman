@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Document</title>
+
+    <link rel="html" href="/pages/partials/header.html" />
+
+    
+    <style>
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*, *:before, *:after {
+    sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    display: grid;
+}
+
+main { 
+    /* display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr; 
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; */
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: "."; 
+
+    /* border */
+    padding: 30px;
+}
+
+section { 
+    /* grid-area: 1 / 1 / 2 / 2; */
+    background-color: rgb(222, 222, 222);
+    border-radius: 12px;
+    padding: 30px;
+
+    /* center child */
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+} 
+
+.circle {
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-radius: 50%;
+    background-image: url('/me.jpg');
+    background-position: 50%;
+}
+
+
+.circle  {
+    background: linear-gradient(223deg, rgba(255, 255, 255, 0.95), rgba(222, 222, 222, 0.95) );
+    background-size: 300% 300%;
+}
+
+
+
+
+.circleS {
+  -moz-box-shadow:    3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow:        inset 0px 3px 0px 0px rgba(93, 91, 91, 0.2);
+}
+
+
+    </style>
+</head>
+<body>
+
+<main>
+
+
+<section>
+    
+
+
+<svg width="60" height="60" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg" stroke="currentColor">
+<style type="text/css">
+<![CDATA[
+    #c1, #c2 {
+    animation: 
+        size cubic-bezier(0.165, 0.84, 0.44, 1) 1.8s, 
+        opacity cubic-bezier(0.3, 0.61, 0.355, 1) 1.8s;
+        animation-iteration-count: infinite;
+        transform-origin: 50% 50%;
+        stroke-opacity: 1;
+    }
+    
+    @keyframes size{
+        0% { 
+            transform: scale(0);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    @keyframes opacity {
+        0% { 
+            stroke-opacity: 1;
+        }
+        100% {
+            stroke-opacity: 0;
+        }
+    }
+
+    #c2 {
+        animation-delay: -.9s;
+    }
+]]>
+</style>
+<g fill="none" fill-rule="evenodd" stroke-width="2">
+    <circle cx="22" cy="22" r="20" id="c1" fill="none"></circle>
+    <circle cx="22" cy="22" r="20" id="c2" fill="none"></circle>
+</g>
+</svg>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+</main>
+
+
+
+
+
+
+</body>
+</html>

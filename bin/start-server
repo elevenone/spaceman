@@ -1,0 +1,20 @@
+#!/bin/bash
+
+#python -m SimpleHTTPServer 3000
+
+# export PATH=/usr/local/php5/bin:$PATH
+
+PORT="8000"
+
+if [ -n "$1" ]; then
+    PORT="$1"
+fi
+
+php -S localhost:8000 -t public/
+# php -S localhost:$PORT -t public/ public/index.html
+
+
+
+
+# php -S localhost:8000
+

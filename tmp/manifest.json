@@ -1,0 +1,10 @@
+{
+    "short_name": "_app",
+    "name": "_app",
+    "start_url": "/?source=pwa",
+    "display": "standalone",
+    "icons": [
+        { "src": "/_app/ui/icons/192.png", "type": "image/png", "sizes": "192x192" },
+        { "src": "/_app/ui/icons/512.png", "type": "image/png", "sizes": "512x512" }
+    ]
+}

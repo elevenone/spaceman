@@ -5,22 +5,27 @@
       "sourceMap": false,
       "declaration": true,
       "importHelpers": false,
-      "target": "ESNext",
-      "module": "ESNext",
+      "target": "es2018",
+      "module": "es6",
       "moduleResolution": "node",
-      "outDir": "package",
+      "outDir": "public/package/_42",
+      // "rootDir": "src",
       "noEmitOnError": true,
       "noUnusedLocals": true,
       "lib": [
-        "ESNext",
+        "es2018",
         "dom"
       ]
     },
-    "files": [
-      "src/_42/promiseDom.ts",
-      "src/_42/fetchPartial.ts",
-      "src/_index.ts",
+    "include": [
+      "src/**/*.ts"
     ],
+    // "files": [
+    //   "src/_42/constants.ts",
+    //   "src/_42/promiseDom.ts",
+    //   "src/_42/fetchPartial.ts",
+      // "src/_app/_index.ts",
+    // ],
     "baseUrl": ".",
     "paths": {
       "*": [
