@@ -4,41 +4,131 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>__42</title>
-
-    <link rel="stylesheet" href="/_app/ui/css/main.css" />
-    <link rel="stylesheet" href="/pages/experiments/noise/noise.css" />
+    
+    <title>Document</title>
 
     <link rel="html" href="/pages/partials/header.html" />
+
+    
+    <style>
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*, *:before, *:after {
+    sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    display: grid;
+}
+
+main { 
+    /* display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr; 
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; */
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: "."; 
+
+    /* border */
+    padding: 30px;
+}
+
+section { 
+    /* grid-area: 1 / 1 / 2 / 2; */
+    background-color: rgb(222, 222, 222);
+    border-radius: 12px;
+    padding: 30px;
+
+    /* center child */
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+} 
+
+.circle {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(145, 47, 47);
+    border-radius: 50%;
+    background-image: url('/me.jpg');
+    background-position: 50%;
+}
+
+
+.circle  {
+    background: linear-gradient(223deg, rgba(58, 58, 58, 0.95), rgba(24, 24, 24, 0.95) );
+
+    animation: gradient 10s ease infinite;
+}
+
+
+
+@keyframes gradient { 
+    0%{
+        background-position:0% 88%;
+    }
+    50%{
+        background-position:100% 13%;
+    }
+    100%{
+        background-position:0% 88%;
+    }
+}
+
+
+canvas {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(223deg, rgba(58, 58, 58, 0.95), rgba(24, 24, 24, 0.95) );
+
+    z-index:1;
+
+}
+
+
+    </style>
 </head>
 <body>
 
-<h1>__42 experiment / noise</h1>
+<main>
 
 
+<section>
+    
+    <div class="circle">
+            <canvas id="canvas" style="width: 300px; height: 300px;" width="360" height="360"></canvas>
+    </div>
 
-<header>
-    <link rel="html" href="/pages/partials/nav.html" />
-</header>
-
-
-<!-- THIS FRAGMENT WILL BE REPLACED -->
-
-<section id='________fx'>
-    <canvas id="canvas" style="width: 300px; height: 300px;" width="360" height="360"></canvas>
 </section>
 
-<link rel="html" href="/pages/partials/footer.html" />
 
 
 
 
-<!-- <script defer type="module" src="/package/_app/_index.js"></script> -->
+
+
+
+
+</main>
+
+
 
 <script src="./simplex-noise.js"></script>
 <script src="./noise.js"></script>
-
-
 
 
 </body>

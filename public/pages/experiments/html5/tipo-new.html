@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/package/css/minireset.css" />
+
+    <link rel="html" href="/pages/partials/header.html" />
+
+<style>
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*, *:before, *:after {
+    sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    display: grid;
+}
+
+main { 
+    /* display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr; 
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; */
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: "."; 
+
+    /* border */
+    padding: 30px;
+}
+
+section { 
+    /* grid-area: 1 / 1 / 2 / 2; */
+    background-color: rgb(222, 222, 222);
+    border-radius: 12px;
+    padding: 30px;
+
+    /* center child 
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: baseline;
+	align-content: flex-start;*/
+} 
+
+
+
+
+</style>
+</head>
+<body>
+
+<main>
+
+
+
+<section>
+
+
+
+
+    <style>
+
+        /* para default -9
+        p {
+            margin: 1em 0 1em 0;
+        }
+        body {
+            padding: 6vmin;
+        }
+        
+        /* div */
+        .entry {
+            display: flex;
+            flex-direction: column;
+            padding: 0 0 50px;
+
+        }
+        
+        
+        /* paragraph */
+        article.entry p {
+            font: 300 25px/30px Source Serif Pro, serif;
+            max-width: 500px;
+        
+            opacity: 1;
+            transition: opacity .25s ease-in-out;
+        }
+        article.entry p::after {
+            font-size: 22px;
+            content: ' ___default';
+            color: red;
+        }
+        
+        article.entry p:hover {
+            opacity: .5;
+        }
+        
+        article.entry .h3 {
+            color: red;
+            font: 500 16px/30px 'DM Sans', sans-serif;
+            text-transform: uppercase;
+            display: block;
+            width: 156px;
+            margin-bottom: 36px;
+            vertical-align: top;
+        }
+        
+        
+        
+        @media (min-width: 768px) {
+            article.entry {
+            }
+            article.entry p {
+                font: 30px/36px serif;
+        
+            }
+            article.entry p::after {
+                content: ' ___768px';
+            }
+            article.entry .h3 {
+                line-height: 1.8;
+            }
+        }
+        @media (min-width: 992px) {
+            article.entry {
+                padding: 0 0 100px;
+            }
+            article.entry p {
+                font: 35px/42px serif;
+                max-width: 650px;
+            }
+            article.entry p::after {
+                content: ' ___992px';
+            }
+        }
+        @media (min-width:1200px) {
+            article.entry {
+            }
+            article.entry p {
+                font: 45px/54px serif;
+                max-width: 800px;
+            }
+            article.entry p::after {
+                content: ' ___1200px';
+            }
+        }
+        @media (min-width:1900px) {
+            article.entry {
+            }
+            /* paragraph */
+            article.entry p {
+                font: 50px/60px serif;
+                /* font-size: 50px;
+                line-height: 60px; */
+                max-width: 1100px;
+            }
+            article.entry p::after {
+                content: ' ___1900px';
+            }
+        }
+        
+        
+        
+        @media (min-width: 768px) {
+            article.entry .h3 {
+                line-height: 1.8
+            }
+        }
+        @media (min-width: 992px) {
+            article.entry .h3 {
+                display: inline-block;
+                width: 189px;
+                margin-bottom: 0;
+                margin-top: 5px
+            }
+        }
+        @media (min-width: 1200px) {
+            article.entry .h3 {
+                font-size: 16px
+            }
+        }
+
+        article.entry p strong {
+            font-family: DM Sans, sans-serif;
+            font-weight: 500
+        }
+        article.entry p:last-child {
+        }
+    </style>
+
+
+
+<article class="entry">
+    <p>
+        <span class="h3">dream / <time datetime="2021-11-14">2021-11-??</time></span>
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, rerum fugiat accusantium adipisci autem iste dolorum ipsum quo debitis, nulla officia illo dolor ut natus sed delectus numquam voluptatem in.</span>
+    </p>
+</article>
+
+<article class="entry">
+    <p>
+        <span class="h3">viszonyok / <time datetime="2021-11-14">2021-11-??</time></span>
+        <span>én – én / én – te / én – ők viszonyok <a href="https://youtu.be/zZCAM8WHxVo?t=776">https://youtu.be/zZCAM8WHxVo?t=776</a></span>
+    </p>
+</article>
+
+<article class="entry">
+  <p>
+      <span class="h3">viszonyok / <time datetime="2021-11-14">2021-11-??</time></span>
+      <span>
+
+        1. név: sziddhárta / aki a célját beteljesíti
+        sziddha képesség 
+        artha forrás elérés
+
+        vagy a karma vagy a dharma kerekenek forgatoja lesz
+        vagy vilaguralkodo vagy a belso vilag ura
+
+        3 palotaban elt
+
+        csakravartin / vilaguralkodo
+
+
+        2. név: gotama remete
+        nirotha -- elzárják az érzékszervi kapukat
+
+        satori = pillanat alatti felismerés
+
+        középút felismerése
+
+        ha valaki felismeri a kozeputat teljesen egyedul marad
+
+
+
+        3. név: buddha
+
+        4 fázis megvilágosodás
+
+
+        nirmanakaya
+        látszattest
+
+
+
+        buddha tanításai
+
+        A négy nemes igazság
+
+                    1. 2. = ez a kettô a karma igazsága / a következmények és az okok igazsága
+                    3. 4. = dharma igazsága
+
+        1. dukkha / a következmények igazsága / amit tapasztalunk az életben az következmény 
+                  / a kimozdultság állapotában / legyen ez pozitív vagy negatív
+                  a karmából a következmények igazsága
+
+                  vidgya / marigpa = nemtudás okozza a dukkhát
+
+                  Az 5 végtelen nézete
+                  mahajana szutra / kicsiben a nagy nagyban a kicsi
+                  határtalan / végtelen
+
+                    Létezésünk 
+                    1. végtele ntér
+                    2. végtelen idô
+                    3. végtelen létforma
+                    4. végtelen képességek
+                    5. végtelen tudat
+
+                  SZEMLÉLET: a tudatunkat nyitni kell
+
+        2. okok / feltárják hogy ezek miért okoznak szenvedést, miért kibillentek
+                  az okok igazsága
+
+
+                  hogyan tudunk kilépni a következményekbôl? mi tartja fent ezeket
+
+                    4 világi nézet
+
+                    1. materialistikus nézet
+                    2. idealista nézet / vallásos / öröklét / ezotéria
+                    3. determinisztikus nézet / vallásos / sors / horoszkóp pl.
+                    4. szabad akarati nézet / spontán keletkezés / mi döntünk a sorsunk felett
+
+                    ezek egyike sem felel meg a karma az ok-okozat törvényének
+
+                    Téves fátyol
+                    ezek miatt nem értjük meg a karmát
+
+
+        ha  a dharma  igazságáról besdzlünk akkor ott nem ok és következmény hanem: 
+        a rossz vagy a helytelen kioltása a jó gyakorlatának az igazsága
+
+        3. nirodha / kioldódás igazsága
+          ezek megváltoztathatóak / az okok szintjén
+          a helytelen dolgok elhagyásáról szól / akuszala dhamma
+
+          A 4 pecsét
+
+          a karma állapotát értve eljutunk a darmáhaz
+
+          1. pecsét: minden múlandó, ami keletkezett, összetett, elmúlik, szétesik
+          2. pecsét: minden szennyezett dolog szenvedést eredményez
+          fontos a lemondás a megtisztulás
+          3. pecsét: nem létezik önvaló
+          4. pecsét: a nirvána nem más mint a nyugalom boldogság, béke
+
+
+
+        4, a helyes dolgok gyakorlása
+            kuszala dhammák gyakorlása
+
+            szemlélet:
+            a középutas szemlélet:
+            mely mentes az uorökléttanok és a megsemmisüléstanok szélsôségétôl
+
+            sem nem
+              pl; lélek:
+              sem nem semmisül meg
+              sem nem vándorol tovább
+
+
+              kérdések
+
+              1. ki viseli el a karma következényeit? ha nincs aki csalakedte, akkor ki viseli el
+              2. van-e szabad akarat
+              3. ki az aki emlékszik korábbi életekre / hogyan emlékezhetünk korábbi életekre
+              4. ki születik újjá
+            
+
+
+
+        AZ ösvény
+
+        8 lépcsôfoka van a középút ösvényének
+
+        Felosztás                                           nyolcrétű ösvény tényezői        Megszerzett tényezők
+        Bölcsesség (szanszkrit: pradzsnyá, páli: pannyá)    1. Helyes szemlélet / nézet     9. Legfelsőbb igaz tudás
+                                                            2. Helyes szándék               10. Legfelsőbb igaz megszabadulás
+        Erény (szanszkrit: síla, páli: szíla)               3. Helyes beszéd
+                                                            4. Helyes cselekvés
+                                                            5. Helyes életmód
+        Elmélyedés (szanszkrit és páli: szamádhi)           6. Helyes erőfeszítés
+                                                            7. Helyes éberség
+                                                            8. Helyes elmélyedés
+
+
+
+
+      </span>
+
+
+      <span>
+
+        Helyes elhatározás: 
+        Helyes szándék:
+
+        ezek mögött van értékrend
+
+        mostani tapasztalat . kibillent
+        múlandoság / korlát                   út              középen
+        karma                               - darma         - nirvána éstékrendje
+
+
+
+
+
+
+        
+      </span>
+
+
+
+
+  </p>
+</article>
+
+
+<div class="item">
+    <img src="./img.jpg" class="js-image" alt="">
+    <h2>Some title</h2>
+    <p>Lorem ipsum.</p>
+</div>
+
+
+
+</section>
+
+
+
+</main>
+
+
+
+
+
+
+</body>
+</html>

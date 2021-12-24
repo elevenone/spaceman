@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/package/css/minireset.css" />
+
+
+    <link rel="html" href="/pages/partials/header.html" />
+
+    <style>
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*, *:before, *:after {
+    sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    display: grid;
+}
+
+main { 
+    /* display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr; 
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; */
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: "."; 
+
+    /* border */
+    padding: 30px;
+}
+
+section { 
+    /* grid-area: 1 / 1 / 2 / 2; */
+    background-color: rgb(222, 222, 222);
+    border-radius: 12px;
+    padding: 30px;
+
+    /* center child */
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: baseline;
+	align-content: flex-start;
+} 
+
+
+
+
+</style>
+<link rel="stylesheet" href="/pages/experiments/scrapbook/scrapbook.css" />
+</head>
+<body>
+
+<main>
+
+
+<section id="scrapbook">
+    
+
+ 
+
+        <!-- article -->
+        <article>
+            <p>
+                <span class="" id="">
+                    <time datetime="2021-09-17 20:00">2021 november 11</time>
+                    <a href="" class="" data-id-reference="">href</a>
+                </span>
+                <span id="">
+                    text
+                </span>
+            </p>
+        </article>
+        <!-- article -->
+    
+    
+    
+        <!-- article -->
+        <article>
+            <p>
+                <span class="on" id="_000">
+                    <time datetime="2021-09-17 20:00">2021 november 11</time>
+                    <a href="#" class="on" data-id-reference="_001">Hello.</a>
+                </span>
+                <span id="_001"> How are you 
+                    <a href="#" data-id-reference="_002">doing</a>?
+                </span>
+                <span id="_002"> Are you 
+                    <a href="#" data-id-reference="_003">bored</a>?
+                </span>
+    
+                <span id="_003"> We can drink 
+                    <a href="#" data-id-reference="_004">Bloody Marys</a>
+                    <span id="_004"> like 
+                        <a href="#" data-id-reference="_005">we used to</a>
+                    </span> and talk about 
+                    <a href="#" data-id-reference="_nora">the old times</a>.
+                </span>
+            </p>
+    
+            <p class="storynewsection">
+                <span id="_005">
+                    <time datetime="2021-09-17 20:00">2021 november 11</time>
+                    <a href="#" data-id-reference="_006">Once</a> upon a time...
+                </span>
+                <span id="_006">
+                    <img class="scrapimage" src="./heart.png" alt="heart" />
+                </span>
+                <span id="_nora">
+                    <a href="#" data-id-reference="_birds">
+                        <img src="./tree.png" alt="Nora" />
+                    </a>
+                </span>
+                <span id="_birds">
+    
+                </span>
+            </p>
+        </article>
+        <!-- article -->
+        
+        <!-- audio -->
+        <article>
+            <p>
+                <span id="777">
+                    <time datetime="2021-09-17 20:00">2021 november 11</time>
+                    Some little <a href="#" data-id-reference="888">birds </a>
+                </span>
+                <span id="888">
+                    <style>
+                        audio {
+                            /* width: 20% */
+                        }
+                    </style>
+                    <audio controls autoplay>
+                        <!-- <source src="horse.ogg" type="audio/ogg"> -->
+    
+                    </audio>
+                    are living on the <a href="#" data-id-reference="777777">tree</a>.
+                </span>
+                <span id="777777">
+                    <img src="./tree.png" alt="heart" />
+                </span>
+            </p>
+        </article> 
+        <!-- audio -->
+    
+    
+ 
+
+</section>
+
+
+
+
+
+
+
+
+
+</main>
+
+
+
+<script defer type="module" src="/pages/experiments/scrapbook/scrapbook.js"></script>
+
+
+
+</body>
+</html>
