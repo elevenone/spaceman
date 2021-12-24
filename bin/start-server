@@ -10,7 +10,7 @@ if [ -n "$1" ]; then
     PORT="$1"
 fi
 
-php -S localhost:8000 -t public/
+php -S localhost:$PORT -t public/
 # php -S localhost:$PORT -t public/ public/index.html
 
 

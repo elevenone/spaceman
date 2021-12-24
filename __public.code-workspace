@@ -1,0 +1,10 @@
+{
+	"folders": [
+		{
+			"path": "./public/"
+		}
+	],
+	"settings": {
+		"workspace.isHidden": false
+	}
+}
