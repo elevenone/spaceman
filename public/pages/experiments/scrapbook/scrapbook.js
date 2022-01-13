@@ -1,5 +1,51 @@
 "use strict";
 
+
+// document.getRootNode.style.display = "none"
+
+let _show = function (_el) {
+    _el.style.display = 'block'
+}
+
+let _hide = function (_el) {
+    _el.style.display = 'none'
+}
+
+// let toggle = function (_el) {
+
+//     if (window.getComputedStyle(_el).display === 'block') {
+//         _hide(_el)
+//         return
+//     }
+
+//     _show(_el)
+// }
+
+// toggle('body')
+
+
+
+
+
+
+// document.body.style.display = 'none'
+
+let elem = document.querySelector('body')
+
+if (elem.classList.contains('hide')) {
+    elem.classList.remove('hide')
+    elem.classList.add('show')
+    console.log('contains')
+}
+
+
+
+
+
+
+
+
+
 // check if dom is ready
 // const dom = new PromiseDom()
 // dom.ready.then(() => ___launch('9 8 7 6 5 4 3 2 1 0'))
@@ -8,6 +54,10 @@ function ___launch(message) {
     init();
     pagetitle();
     reveal();
+
+
+    document.body.style.display = 'block'
+
 }
 ___launch('9 8 7 6 5 4 3 2 1 0');
 // init

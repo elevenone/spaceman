@@ -2,6 +2,20 @@ html {
     font-size: 16px;
 }
 
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+
+body.no-js {
+  /* display: none; */
+  transition: all 1000ms cubic-bezier(0.76, 0, 1, 1);
+}
+
 body {
     margin: 0 auto;
     color: #111;
@@ -96,3 +110,6 @@ a:active {
 /* p {
   color:aqua;
 } */
+
+
+

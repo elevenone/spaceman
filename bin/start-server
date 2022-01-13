@@ -10,11 +10,19 @@ if [ -n "$1" ]; then
     PORT="$1"
 fi
 
-php -S localhost:$PORT -t public/
-# php -S localhost:$PORT -t public/ public/index.html
 
 
 
 
-# php -S localhost:8000
+command_exists () {
+    type "$1" &> /dev/null ;
+}
+
+if command_exists php ; then
+    php -S localhost:$PORT -t public/
+else
+    /opt/homebrew/bin/php -S localhost:$PORT -t public/
+fi
+
+
 

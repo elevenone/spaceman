@@ -12,12 +12,22 @@
 </head>
 <body>
 
-<h1>__42 experiments pages list</h1>
+<h1>__42 experiments</h1>
 
 
 
 <header>
-    <link rel="html" href="/pages/partials/nav.html" />
+    <nav>
+        <ul>
+            <li>
+                <a href="/">home</a>
+                <a href="/pages" data-pjax-prefetch="hover">pages list</a>
+                <a class="active" href="/pages/experiments" data-pjax-prefetch="hover">experiments</a>
+                <a href="/pages/about" data-pjax-prefetch="hover">about</a>
+                <a href="/pages/contact" data-pjax-prefetch="hover">contact</a>
+            </li>
+        </ul>
+    </nav>
     <img id="marker" src="/_app/ui/_42.gif" alt="">
 </header>
 
@@ -31,6 +41,9 @@
     </ku>
     <ku>
         <a target="_blank" data-pjax-disable="" href="/pages/experiments/html5/grid-border-circle.html">grid-border-circle</a>
+    </ku>
+    <ku>
+        <a target="_blank" data-pjax-disable="" href="/pages/experiments/html5/grid-border-circle-anim.html">grid-border-circle-anim</a>
     </ku>
     <ku>
         <a target="_blank" data-pjax-disable="" href="/pages/experiments/html5/loader.html">loader</a>
@@ -48,12 +61,15 @@
 
 </main>
 
-<link rel="html" href="/pages/partials/footer.html" />
+<!-- FOOTER -->
+<footer>
+    <link rel="html" href="/pages/partials/footer.html" />
+</footer>
+<!-- / FOOTER -->
 
 
 
-
-<script defer type="module" src="/package/_app/_index.js"></script>
+<script defer type="module" src="/rsrc/_app/_index.js"></script>
 
 <script>
 console.log("I will run on every navigation");

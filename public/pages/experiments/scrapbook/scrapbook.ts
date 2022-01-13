@@ -1,4 +1,4 @@
-import PromiseDom from "../../../package/_42/promiseDom.js";
+import PromiseDom from "../../../rsrc/_42/promiseDom.js";
 
 
 // check if dom is ready
@@ -10,6 +10,9 @@ function ___launch(message): void {
     init()
     pagetitle()
     reveal()
+
+    // show page
+
 }
 ___launch('9 8 7 6 5 4 3 2 1 0')
 

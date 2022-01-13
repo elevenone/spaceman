@@ -6,33 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>__42</title>
 
+    <!-- meta -->
+    <!-- <link rel="html" href="/pages/partials/meta.html" /> -->
+
+    <!-- css -->
     <link rel="stylesheet" href="/_app/ui/css/main.css" />
 
+    <!-- fonts -->
     <link rel="html" href="/pages/partials/header.html" />
 </head>
 <body>
 
-
-
-<h1 id="top">__42 index</h1>
-
-
+<!-- H1 -->
+<h1 id="top">__42</h1>
+<!-- H1 -->
 
 <!-- HEADER -->
 <header>
     <a href="#content">skip navigation</a>
     <nav>
       <ul>
-          <li>
-                <a class="active" href="/">home</a>
-                <a href="/pages" data-pjax-prefetch="hover">pages list</a>
-                <a href="/pages/experiments" data-pjax-prefetch="hover">experiments</a>
-                <a href="/pages/about" data-pjax-prefetch="hover">about</a>
-                <a href="/pages/contact" data-pjax-prefetch="hover">contact</a>
-          </li>
+        <li>
+            <a class="active" href="/">home</a>
+            <a href="/pages" data-pjax-prefetch="hover">pages list</a>
+            <a href="/pages/experiments/" data-pjax-prefetch="hover">experiments</a>
+            <a href="/pages/about" data-pjax-prefetch="hover">about</a>
+            <a href="/pages/contact" data-pjax-prefetch="hover">contact</a>
+        </li>
       </ul>
     </nav>
-    <img id="marker" src="/_app/ui/_42.gif" alt="" />
+    <!-- <img id="marker" src="/_app/ui/_42.gif" alt="" /> -->
+    <img id="marker" src="/pages/load.gif" alt="" />
 </header>
 <!-- / HEADER -->
 
@@ -41,37 +45,45 @@
     <section>
         <h2>home</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis earum atque eveniet! Impedit labore, quisquam quos natus quaerat at voluptatum repudiandae vel? Quasi molestiae nihil magnam, porro blanditiis eligendi doloremque?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quo id alias debitis ipsum, porro rem at esse sed ut hic? Minima debitis nam dolores magnam aliquid molestias delectus quod!</p>
     </section>
+
+    <h1>h1</h1>
+    <h2>h2</h2>
+    <h3>h3</h3>
+    <h4>h4</h4>
+    <h5>h5</h5>
+    <h6>h6</h6>
+    <p>paragraph</p>
+    <small>small</small>
+    <ul>
+        <li>list 1</li>
+        <li>list 2</li>
+        <li>list 3</li>
+    </ul>
+    <img src="/_app/ui/icons/512.png" alt="demoimage" />
 </main>
 <!-- / MAIN -->
 
 <!-- FOOTER -->
-<link rel="html" href="/pages/partials/footer.html" />
+<footer>
+    <link rel="html" href="/pages/partials/footer.html" />
+</footer>
 <!-- / FOOTER -->
 
 <!-- SCRIPTS -->
-<!-- <script src="/package/polyfills/intersection-observer.js"></script> -->
-<script src='https://cdn.polyfill.io/v2/polyfill.js?features=IntersectionObserver'></script>
+<script src="/rsrc/polyfills/IntersectionObserver/IntersectionObserver.polyfill.min.js"></script>
 
-<!-- <script>
-    if("IntersectionObserver" in window) {
-        console.log('++++++++111')
-        /* work with IntersectionObserver */
-    } else {
-        console.log('++++++++222')
-        import * as IntersectionObserver from "/package/polyfills/intersection-observer.js"; 
-    }
-</script> -->
-<script defer type="module" src="/package/_app/_index.js"></script>
-<!--
+
+<script defer type="module" src="/rsrc/_app/_index.js"></script>
+
 <script>
-console.log("I will run on every navigation");
+    console.info("I will run on every navigation!");
 </script>
   
 <script data-pjax-eval="false">
-console.log("I will run on initialization only!");
+    console.info("I will run on initialization only!");
 </script>
--->
 <!-- / SCRIPTS -->
 
 </body>

@@ -1,0 +1,87 @@
+/**
+ * some suff taken from: https://piccalil.li/blog/a
+ */
+
+/* Set core root defaults */
+html {
+    box-sizing: border-box;
+
+    font-size: 16px;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+}
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* Box sizing rules */
+* {
+    box-sizing: border-box;
+}
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+
+/* Remove default margin */
+body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, figure, figcaption, blockquote, dl, dd {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+/* Make images easier to work with */
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border: none;
+}
+
+/* For links without a class attribute, I set text-decoration-skip-ink: auto so that the underline renders in a much more readable fashion. This could be set on links globally, but it’s caused one or two conflicts in the past for me, so I keep it like this. */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+
+/* Another thing I’ve finally been brave enough to set as default is font: inherit on input elements, which as a shorthand, does exactly what it says on the tin. No more tiny (mono, in some cases) text! */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+    
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+

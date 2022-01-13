@@ -8,7 +8,6 @@
       "**/.gitignore": true,
       // "**/node_modules": true
     },
-    "workspace.isHidden": false,
     "editor.stickyTabStops": true,
     "editor.detectIndentation": true,
     "editor.tabSize": 4,
@@ -21,6 +20,6 @@
       "editor.tabSize": 4,
       "editor.insertSpaces": true,
       "editor.detectIndentation": false,
-  }
+    }
   }
 
